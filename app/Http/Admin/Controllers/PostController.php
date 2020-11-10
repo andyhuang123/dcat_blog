@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Admin\Controllers;
+namespace App\Http\Admin\Controllers;
 
-use App\Admin\Repositories\Post;
+use App\Http\Admin\Repositories\Post;
 use Dcat\Admin\Form;
 use Dcat\Admin\Grid;
 use Dcat\Admin\Show;
@@ -19,20 +19,19 @@ class PostController extends AdminController
     {
         return Grid::make(new Post(), function (Grid $grid) {
             $grid->column('id')->sortable();
+            $grid->column('nav_id');
             $grid->column('title');
+            $grid->column('author');
             $grid->column('desc');
             $grid->column('type');
             $grid->column('cover_image');
-            $grid->column('video_url');
-            $grid->column('content');
+            $grid->column('video_url'); 
             $grid->column('is_show');
             $grid->column('sort');
             $grid->column('tag');
             $grid->column('like');
             $grid->column('reade_num');
-            $grid->column('is_top');
-            $grid->column('author');
-            $grid->column('nav_id');
+            $grid->column('is_top'); 
             $grid->column('created_at');
             $grid->column('updated_at')->sortable();
         

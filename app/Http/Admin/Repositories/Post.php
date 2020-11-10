@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Admin\Repositories;
+namespace App\Http\Admin\Repositories;
 
 use App\Models\Post as Model;
 use Dcat\Admin\Repositories\EloquentRepository;
