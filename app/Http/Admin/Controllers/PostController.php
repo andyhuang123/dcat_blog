@@ -3,13 +3,15 @@
 namespace App\Http\Admin\Controllers;
 
 use App\Http\Admin\Repositories\Post;
-use Dcat\Admin\Form;
+use App\Http\Admin\Repositories\Category;
+use Dcat\Admin\Form; 
 use Dcat\Admin\Grid;
 use Dcat\Admin\Show;
 use Dcat\Admin\Http\Controllers\AdminController;
 
 class PostController extends AdminController
 {
+    protected $title="文章";
     /**
      * Make a grid builder.
      *
@@ -17,24 +19,24 @@ class PostController extends AdminController
      */
     protected function grid()
     {
-        return Grid::make(new Post(), function (Grid $grid) {
-            $grid->column('id')->sortable();
-            $grid->column('nav_id');
+        return Grid::make(new Post(['nav_name']), function (Grid $grid) { 
+            $grid->column('id')->sortable(); 
+            $grid->column('nav_name.title','所属分类');
             $grid->column('title');
-            $grid->column('author');
-            $grid->column('desc');
-            $grid->column('type');
-            $grid->column('cover_image');
-            $grid->column('video_url'); 
-            $grid->column('is_show');
-            $grid->column('sort');
-            $grid->column('tag');
+            $grid->column('author'); 
+            $grid->column('type')->display(function($type){
+                $name = Category::$navigation[$type];
+                return "<span Class='label' style='background:blue'>$name</span>";
+            });
+            $grid->column('tag')->label('danger');
+            $grid->column('cover_image')->image('', 100, 100); 
+            $grid->column('is_show')->switch();
+            $grid->column('is_top','是否顶置')->switch();  
             $grid->column('like');
             $grid->column('reade_num');
-            $grid->column('is_top'); 
-            $grid->column('created_at');
-            $grid->column('updated_at')->sortable();
-        
+            $grid->column('sort')->editable(true);
+          
+            $grid->column('created_at'); 
             $grid->filter(function (Grid\Filter $filter) {
                 $filter->equal('id');
         
@@ -80,24 +82,45 @@ class PostController extends AdminController
     protected function form()
     {
         return Form::make(new Post(), function (Form $form) {
+
             $form->display('id');
-            $form->text('title');
-            $form->text('desc');
-            $form->text('type');
-            $form->text('cover_image');
-            $form->text('video_url');
-            $form->text('content');
-            $form->text('is_show');
-            $form->text('sort');
-            $form->text('tag');
-            $form->text('like');
-            $form->text('reade_num');
-            $form->text('is_top');
-            $form->text('author');
-            $form->text('nav_id');
-        
-            $form->display('created_at');
-            $form->display('updated_at');
+
+            $form->column(6, function (Form $form) {
+
+                $tree_nav   = (new Category())->getTree(); 
+
+                $form->select('nav_id', '所属导航')->options($tree_nav)->default(0);
+
+                $form->text('title')->rules('required');
+                $form->textarea('desc');
+                $form->text('author'); 
+                $form->tags('tag', '标签')->saveAsJson(); 
+                $form->image('cover_image');
+
+
+            });
+            $form->column(6, function (Form $form) {
+
+                $form->select('type')->options( Category::$navigation)->when('=', 1, function (Form $form) {
+
+                    $form->editor('content');
+                  
+                 })->when('=', 2, function (Form $form) {
+    
+                    $form->file('video_url'); 
+                    
+                })->default(1);
+                 
+                $form->switch('is_show')->default(1);
+              
+                $form->switch('is_top')->default(0); 
+               
+                $form->number('sort'); 
+
+
+            }); 
+          
         });
+
     }
 }
