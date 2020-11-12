@@ -11,14 +11,19 @@
                             <div class="col-lg-6 col-md-8 no-pd">
                                 <div class="main-ws-sec">  
                                     <div class="posts-section">
-                                      
+                                     @if (count($list))
+                                        @foreach($list as $key=>$value)
+                                        
+                                           @if($key==0)
+                                             @include('layouts.top-profiles')
+                                           @endif
                                         <div class="post-bar">
                                             <div class="post_topbar">
                                                 <div class="usy-dt">
                                                     <img src="images/resources/us-pic-1.png" alt="" width="50px" height="50px">
                                                     <div class="usy-name">
                                                         <h3>coding</h3>
-                                                        <span><img src="images/clock.png" alt="">3 min ago</span>
+                                                        <span><img src="images/clock.png" alt="">{{$value->created_at->diffForHumans()}}</span>
                                                     </div>
                                                 </div>
                                                 <div class="ed-opts">
@@ -37,12 +42,14 @@
                                                 </ul>
                                             </div>
                                             <div class="job_descp">
-                                                <h3>Senior Wordpress Developer</h3>
-                                                <ul class="job-dt">
+                                                <h3>{{$value->title}}</h3>
+                                                <!-- <ul class="job-dt">
                                                     <li><a href="#" title="">Full Time</a></li>
                                                     <li><span>$30 / hr</span></li>
-                                                </ul>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... <a href="#" title="">view more</a></p>
+                                                </ul> -->
+                                                <p>{{$value->desc}} </br>
+                                                    <a href="#" title="">查看详情</a>
+                                                </p>
                                                 <ul class="skill-tags">
                                                     <li><a href="#" title="">HTML</a></li>
                                                     <li><a href="#" title="">PHP</a></li>
@@ -56,21 +63,27 @@
                                                     <li>
                                                         <a href="#"><i class="la la-heart"></i> Like</a>
                                                         <img src="images/liked-img.png" alt="">
-                                                        <span>25</span>
+                                                        <span>{{$value->like}}</span>
                                                     </li>
                                                     <li>
                                                         <a href="#" title="" class="com"><img src="images/com.png" alt=""> Comment 15</a>
                                                     </li>
                                                 </ul>
-                                                <a><i class="la la-eye"></i>Views 50</a>
+                                                <a><i class="la la-eye"></i>Views {{$value->reade_num}}</a>
                                             </div>
                                         </div>
+                                          @if($key==1)
+                                            @include('layouts.ad-profiles')
+                                          @endif 
 
-                                        @include('layouts.ad-profiles')
-                                         
-                                       
-                                        @include('layouts.top-profiles')
-
+                                        @endforeach
+                                    @else
+                                    <div class="post-bar">
+                                            <div class="post_topbar">
+                                            <div class="empty-block">暂无数据 ~_~ </div>
+                                            </div>
+                                    </div>
+                                    @endif
                                         <div class="process-comm">
                                             <a href="#" title=""><img src="images/process-icon.png" alt=""></a>
                                         </div>
