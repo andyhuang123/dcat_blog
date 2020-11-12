@@ -26,9 +26,8 @@ class HomeController extends Controller
     {
         $post = new Post;
 
-        $list = $post->where(['is_show'=>1])->paginate(2);
-     
-
+        $list = $post->where(['is_show'=>1])->orderBy('id','desc')->paginate(5);
+         
         return view('home',compact('list'));
     }
 }

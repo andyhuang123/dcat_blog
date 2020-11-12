@@ -33,7 +33,7 @@
                                             </div>
                                             <div class="epi-sec">
                                                 <ul class="descp">
-                                                    <li><img src="images/icon8.png" alt=""><span>Epic Coder</span></li>
+                                                    <li><span><i class="la la-folder"></i>{{$value->nav_name->title}}</span></li>
                                                     <li><img src="images/icon9.png" alt=""><span>wuhan</span></li>
                                                 </ul>
                                                 <ul class="bk-links">
@@ -51,11 +51,11 @@
                                                     <a href="#" title="">查看详情</a>
                                                 </p>
                                                 <ul class="skill-tags">
-                                                    <li><a href="#" title="">HTML</a></li>
-                                                    <li><a href="#" title="">PHP</a></li>
-                                                    <li><a href="#" title="">CSS</a></li>
-                                                    <li><a href="#" title="">Javascript</a></li>
-                                                    <li><a href="#" title="">Wordpress</a></li>
+                                                    @if(count($value->tag))
+                                                        @foreach($value->tag as $k=>$v)
+                                                            <li><a href="#" title="">{{$v}}</a></li>
+                                                        @endforeach
+                                                    @endif
                                                 </ul>
                                             </div>
                                             <div class="job-status-bar">
@@ -85,7 +85,9 @@
                                     </div>
                                     @endif
                                         <div class="process-comm">
-                                            <a href="#" title=""><img src="images/process-icon.png" alt=""></a>
+                                        
+                                        {{$list->onEachSide(1)->appends(['page'=>Request::except('page')])->links('pagination.default')}}
+                                           
                                         </div>
                                     </div>
                                 </div>

@@ -20,6 +20,13 @@ class Post extends Model
     {
         return $this->belongsTo(Category::class, 'nav_id');
     }
+
+    public function getTagAttribute($tag)
+    {
+        return json_decode($tag);
+    }
+
+ 
  
     
 }
