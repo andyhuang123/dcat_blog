@@ -3,7 +3,7 @@
         <img src="images/resources/gzh.png" alt=""> 
         <span>编程纪元</span>
         <div class="sign_link">
-            <h3><a href="#" title="">点关注不迷路</a></h3>
+            <h3><a href="#" title="">扫码关注不迷路</a></h3>
             <!-- <a href="#" title="">Learn More</a> -->
         </div>
     </div>
