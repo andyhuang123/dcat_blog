@@ -11,5 +11,28 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.styles([
+    'resources/css/animate.css',
+    'resources/css/bootstrap.css',
+    'resources/css/line-awesome.css',
+    'resources/css/line-awesome-font-awesome.min.css',
+    'resources/jquery/font-awesome.css',
+    'resources/css/jquery.mCustomScrollbar.min.css',
+    'resources/css/style.css',
+    'resources/css/responsive.css',
+    'resources/css/google.css'
+], 'public/css/app.css');
+
+mix.copyDirectory('resources/fonts', 'public/fonts');
+mix.copyDirectory('resources/images', 'public/images');
+mix.copyDirectory('resources/lib/slick', 'public/lib/slick');
+mix.copy('resources/js/popper.js', 'public/js/popper.js');
+
+
+mix.scripts([
+    'resources/jquery/jquery.min.js',
+    'resources/js/bootstrap.min.js',
+    'resources/js/jquery.mCustomScrollbar.js',
+    'resources/js/script.js',
+    'resources/js/scrollbar.js'
+], 'public/js/app.js');

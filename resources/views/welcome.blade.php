@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-   
-      
-<div class="container">
-    <div class="row justify-content-center">
-                <div class="title m-b-md">
-                   <button class="btn btn-success">成功</button>
+    <div class="main-section">
+                <div class="container">
+                    <div class="main-section-data">
+                        <div class="row">
+                              welcome to laravel
+                        </div>
+                    </div>
                 </div>
- 
-      </div>
-</div>     
+            </div>
+  
 @endsection
