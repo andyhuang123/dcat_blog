@@ -34,7 +34,7 @@
                                             <div class="epi-sec">
                                                 <ul class="descp">
                                                     <li><img src="images/icon8.png" alt=""><span>Epic Coder</span></li>
-                                                    <li><img src="images/icon9.png" alt=""><span>India</span></li>
+                                                    <li><img src="images/icon9.png" alt=""><span>wuhan</span></li>
                                                 </ul>
                                                 <ul class="bk-links">
                                                     <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
