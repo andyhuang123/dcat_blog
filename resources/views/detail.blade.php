@@ -17,7 +17,7 @@
                                                     <div class="usy-dt">
                                                         <img src="/images/resources/us-pic-1.png" alt="" width="50px" height="50px">
                                                         <div class="usy-name">
-                                                            <h3>John Doe</h3>
+                                                            <h3>{{$info->author}}</h3>
                                                             <span><img src="/images/clock.png" alt="">3 min ago</span>
                                                         </div>
                                                     </div>
@@ -32,13 +32,13 @@
                                                     </ul>
                                                     <ul class="bk-links">
                                                         <li><a href="#" title=""><i class="la la-bookmark"></i></a></li>
-                                                        <li><a href="#" title=""><i class="la la-envelope"></i></a></li>
+                                                        <li><a href="#" title=""><i class="la la-share-square"></i></a></li>
+                                                        <li><a href="#" title=""><i class="la la-envelope"></i></a></li> 
                                                     </ul>
                                                 </div>
                                                 <div class="job_descp">
-                                                    <h3>Senior Wordpress Developer</h3> 
-                                                    <p>
-                                                      
+                                                    <h3>{{$info->title}}</h3> 
+                                                    <p> 
                                                        {!! $info->content !!}
                                                     </p>
                                                     <ul class="skill-tags">
@@ -54,13 +54,13 @@
                                                         <li>
                                                             <a href="#"><i class="la la-heart"></i> Like</a>
                                                             <img src="/images/liked-img.png" alt="">
-                                                            <span>25</span>
+                                                            <span>{{$info->like}}</span>
                                                         </li>
                                                         <li>
                                                             <a href="#" title="" class="com"><img src="/images/com.png" alt=""> Comment 15</a>
                                                         </li>
                                                     </ul>
-                                                    <a><i class="la la-eye"></i>Views 50</a>
+                                                    <a><i class="la la-eye"></i>Views {{$info->reade_num}}</a>
                                                 </div>
                                             </div>
                                             <div class="comment-section">
