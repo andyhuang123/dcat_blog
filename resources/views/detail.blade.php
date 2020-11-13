@@ -38,7 +38,8 @@
                                                 <div class="job_descp">
                                                     <h3>Senior Wordpress Developer</h3> 
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... 
+                                                      
+                                                       {!! $info->content !!}
                                                     </p>
                                                     <ul class="skill-tags">
                                                         <li><a href="#" title="">HTML</a></li>

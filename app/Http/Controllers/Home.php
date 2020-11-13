@@ -12,7 +12,7 @@ class Home extends Controller
      */
     public function index(Request $request)
     {
-        $post = new Post;
+        $post = new Post();
 
         $list = $post->where(['is_show'=>1])->orderBy('id','desc')->paginate(5);
          
@@ -21,10 +21,13 @@ class Home extends Controller
     /**
      * 详情
      */
-    public function detail(Request $request)
+    public function detail($aid)
     {
-        
-        return view('detail');
+         
+        $post = new Post(); 
+        $info = $post::find($aid);
+       
+        return view('detail',compact('info'));
     }
 
 

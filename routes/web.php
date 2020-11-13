@@ -17,7 +17,7 @@ Route::get('/', 'Home@index')->name('root');
  
 Route::get('/home', 'Home@index')->name('home.index');
 
-Route::get('/detail/{id}', 'Home@detail')->name('home.detail');
+Route::get('/detail/{aid}', 'Home@detail')->name('home.detail');
 
 Route::get('/jobs', 'Jobs@index')->name('home.jobs');
 

@@ -41,7 +41,7 @@
                                                 <div class="job_descp">
                                                     <h3>{{$value->title}}</h3> 
                                                     <p>{{$value->desc}} </br>
-                                                        <a href="{{ route('home.detail',['id'=>$value->id]) }}" title="">查看详情</a>
+                                                        <a href="{{ route('home.detail',['aid'=>$value->id]) }}" title="">查看详情</a>
                                                     </p>
                                                     <ul class="skill-tags">
                                                         @if(count($value->tag))
