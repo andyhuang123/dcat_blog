@@ -76,7 +76,7 @@
 												<a><i class="la la-eye"></i>Views 50</a>
 											</div>
 										</div><!--post-bar end-->
-										 
+										@include('layouts.ad-profiles')
 										<div class="post-bar">
 											<div class="post_topbar">
 												<div class="usy-dt">

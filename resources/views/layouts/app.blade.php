@@ -9,8 +9,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <!-- <script src="{{ asset('js/app.js') }}" defer></script>  -->
+    <!-- Scripts --> 
     <script src="{{ asset('js/popper.js') }}" defer></script> 
     <script src="{{ mix('js/app.js') }}" defer></script>
   

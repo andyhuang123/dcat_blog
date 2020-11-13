@@ -65,10 +65,7 @@
                                                     <a><i class="la la-eye"></i>Views {{$value->reade_num}}</a>
                                                 </div>
                                             </div>
-                                            
-                                            @if($key==0)
-                                                @include('layouts.top-profiles')
-                                            @endif
+                                             
                                             @if($key==2)
                                                 @include('layouts.ad-profiles')
                                             @endif 

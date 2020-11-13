@@ -11,8 +11,8 @@
                 <li><a href="#" title="">Language</a></li>
                 <li><a href="#" title="">Copyright Policy</a></li>
             </ul>
-            <p><img src="images/copy-icon2.png" alt="">Copyright 2017</p>
-            <img class="fl-rgt" src="images/logo2.png" alt="">
+            <p><img src="/images/copy-icon2.png" alt="">Copyright 2017</p>
+            <img class="fl-rgt" src="/images/logo2.png" alt="">
         </div>
     </div>
 </footer>
