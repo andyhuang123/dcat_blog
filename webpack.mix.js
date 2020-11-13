@@ -27,12 +27,14 @@ mix.copyDirectory('resources/fonts', 'public/fonts');
 mix.copyDirectory('resources/images', 'public/images');
 mix.copyDirectory('resources/lib/slick', 'public/lib/slick');
 mix.copy('resources/js/popper.js', 'public/js/popper.js');
-
+mix.copy('resources/jquery/jquery-3.3.1.min.js', 'public/js/jquery-3.3.1.min.js');
 
 mix.scripts([
-    'resources/jquery/jquery.min.js',
+    'resources/jquery/jquery-3.3.1.min.js',
     'resources/js/bootstrap.min.js',
     'resources/js/jquery.mCustomScrollbar.js',
     'resources/js/script.js',
     'resources/js/scrollbar.js'
 ], 'public/js/app.js');
+
+mix.version();

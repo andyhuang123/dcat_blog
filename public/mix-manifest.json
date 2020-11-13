@@ -1,5 +1,6 @@
 {
-    "/css/app.css": "/css/app.css",
-    "/js/popper.js": "/js/popper.js",
-    "/js/app.js": "/js/app.js"
+    "/css/app.css": "/css/app.css?id=3339ec9c47bb10b828b5",
+    "/js/popper.js": "/js/popper.js?id=c4944e346ab393885a5e",
+    "/js/jquery-3.3.1.min.js": "/js/jquery-3.3.1.min.js?id=a09e13ee94d51c524b7e",
+    "/js/app.js": "/js/app.js?id=db24327831152175b914"
 }

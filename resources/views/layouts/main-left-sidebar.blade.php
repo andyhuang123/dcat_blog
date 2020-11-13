@@ -3,7 +3,7 @@
                                         <div class="user-profile">
                                             <div class="username-dt">
                                                 <div class="usr-pic">
-                                                    <img src="images/resources/user-1.png" alt="">
+                                                    <img src="/images/resources/user-1.png" alt="">
                                                 </div>
                                             </div>
                                             <div class="user-specs">
@@ -30,7 +30,7 @@
                                         </div>
                                         <div class="suggestions-list">
                                             <div class="suggestion-usd">
-                                                <img src="images/resources/s1.png" alt="">
+                                                <img src="/images/resources/s1.png" alt="">
                                                 <div class="sgt-text">
                                                     <h4>Jessica William</h4>
                                                     <span>Graphic Designer</span>
@@ -38,7 +38,7 @@
                                                 <span><i class="la la-plus"></i></span>
                                             </div>
                                             <div class="suggestion-usd">
-                                                <img src="images/resources/s2.png" alt="">
+                                                <img src="/images/resources/s2.png" alt="">
                                                 <div class="sgt-text">
                                                     <h4>John Doe</h4>
                                                     <span>PHP Developer</span>
@@ -46,7 +46,7 @@
                                                 <span><i class="la la-plus"></i></span>
                                             </div>
                                             <div class="suggestion-usd">
-                                                <img src="images/resources/s3.png" alt="">
+                                                <img src="/images/resources/s3.png" alt="">
                                                 <div class="sgt-text">
                                                     <h4>Poonam</h4>
                                                     <span>Wordpress Developer</span>
@@ -54,7 +54,7 @@
                                                 <span><i class="la la-plus"></i></span>
                                             </div>
                                             <div class="suggestion-usd">
-                                                <img src="images/resources/s4.png" alt="">
+                                                <img src="/images/resources/s4.png" alt="">
                                                 <div class="sgt-text">
                                                     <h4>Bill Gates</h4>
                                                     <span>C & C++ Developer</span>
@@ -62,7 +62,7 @@
                                                 <span><i class="la la-plus"></i></span>
                                             </div>
                                             <div class="suggestion-usd">
-                                                <img src="images/resources/s5.png" alt="">
+                                                <img src="/images/resources/s5.png" alt="">
                                                 <div class="sgt-text">
                                                     <h4>Jessica William</h4>
                                                     <span>Graphic Designer</span>
@@ -70,7 +70,7 @@
                                                 <span><i class="la la-plus"></i></span>
                                             </div>
                                             <div class="suggestion-usd">
-                                                <img src="images/resources/s6.png" alt="">
+                                                <img src="/images/resources/s6.png" alt="">
                                                 <div class="sgt-text">
                                                     <h4>John Doe</h4>
                                                     <span>PHP Developer</span>
@@ -82,7 +82,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tags-sec full-width">
+                                    <!-- <div class="tags-sec full-width">
                                         <ul>
                                             <li><a href="#" title="">帮助中心</a></li>
                                             <li><a href="#" title="">关于</a></li>
@@ -93,8 +93,8 @@
                                             <li><a href="#" title="">Copyright Policy</a></li>
                                         </ul>
                                         <div class="cp-sec">
-                                            <img src="images/logo2.png" alt="">
-                                            <p><img src="images/cp.png" alt="">Copyright 2017</p>
+                                            <img src="/images/logo2.png" alt="">
+                                            <p><img src="/images/cp.png" alt="">Copyright 2017</p>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>

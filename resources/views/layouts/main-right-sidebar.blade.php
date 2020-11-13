@@ -1,6 +1,6 @@
 <div class="right-sidebar">
     <div class="widget widget-about">
-        <img src="images/resources/gzh.png" alt=""> 
+        <img src="/images/resources/gzh.png" alt=""> 
         <span>编程纪元</span>
         <div class="sign_link">
             <h3><a href="#" title="">扫码关注不迷路</a></h3>
@@ -102,7 +102,7 @@
         </div>
         <div class="suggestions-list">
             <div class="suggestion-usd">
-                <img src="images/resources/s1.png" alt="">
+                <img src="/images/resources/user-1.png" alt="" width="50px" height="50px">
                 <div class="sgt-text">
                     <h4>Jessica William</h4>
                     <span>Graphic Designer</span>
@@ -110,7 +110,7 @@
                 <span><i class="la la-plus"></i></span>
             </div>
             <div class="suggestion-usd">
-                <img src="images/resources/s2.png" alt="">
+                <img src="/images/resources/user-1.png" alt="" width="50px" height="50px">
                 <div class="sgt-text">
                     <h4>John Doe</h4>
                     <span>PHP Developer</span>
@@ -118,7 +118,7 @@
                 <span><i class="la la-plus"></i></span>
             </div>
             <div class="suggestion-usd">
-                <img src="images/resources/s3.png" alt="">
+                <img src="/images/resources/user-1.png" alt="" width="50px" height="50px">
                 <div class="sgt-text">
                     <h4>Poonam</h4>
                     <span>Wordpress Developer</span>
@@ -126,7 +126,7 @@
                 <span><i class="la la-plus"></i></span>
             </div>
             <div class="suggestion-usd">
-                <img src="images/resources/s4.png" alt="">
+                <img src="/images/resources/user-1.png" alt="" width="50px" height="50px">
                 <div class="sgt-text">
                     <h4>Bill Gates</h4>
                     <span>C &amp; C++ Developer</span>
@@ -134,7 +134,7 @@
                 <span><i class="la la-plus"></i></span>
             </div>
             <div class="suggestion-usd">
-                <img src="images/resources/s5.png" alt="">
+                <img src="/images/resources/user-1.png" alt="" width="50px" height="50px">
                 <div class="sgt-text">
                     <h4>Jessica William</h4>
                     <span>Graphic Designer</span>
@@ -142,7 +142,7 @@
                 <span><i class="la la-plus"></i></span>
             </div>
             <div class="suggestion-usd">
-                <img src="images/resources/s6.png" alt="">
+                <img src="/images/resources/user-1.png" alt="" width="50px" height="50px">
                 <div class="sgt-text">
                     <h4>John Doe</h4>
                     <span>PHP Developer</span>

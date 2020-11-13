@@ -3,7 +3,7 @@
                 <div class="header-data">
                     <div class="logo">
                         <a href="/" title="">
-                            <img src="images/logo.png" alt=""> 
+                            <img src="/images/logo.png" alt=""> 
                         </a>
                       
                     </div>
@@ -17,28 +17,28 @@
                         <ul>
                             <li>
                                 <a href="/" title="首页">
-                                    <span><img src="images/icon1.png" alt=""></span> 首页
+                                    <span><img src="/images/icon1.png" alt=""></span> 首页
                                 </a>
                             </li> 
                             <li>
-                                <a href="/projects" title="项目">
-                                    <span><img src="images/icon3.png" alt=""></span> 项目
+                                <a href="javascript:void();" title="项目">
+                                    <span><img src="/images/icon3.png" alt=""></span> 项目
                                 </a>
                                 <ul>
-                                    <li><a href="user-profile.html" title="">项目一</a></li>
-                                    <li><a href="my-profile-feed.html" title="">项目二</a></li>
+                                    <li><a href="/projects" title="">项目一</a></li>
+                                    <li><a href="/projects" title="">项目二</a></li>
                                 </ul>
                             </li> 
                             <li>
                                 <a href="/jobs" title="">
-                                    <span><img src="images/icon5.png" alt=""></span> 小程序
+                                    <span><img src="/images/icon5.png" alt=""></span> 小程序
                                 </a>
                             </li>
                             <li>
                                 <a href="/massages" title="" class="not-box-open">
-                                    <span><img src="images/icon6.png" alt=""></span> 留言
+                                    <span><img src="/images/icon6.png" alt=""></span> 留言
                                 </a>
-                                <div class="notification-box msg">
+                                <!-- <div class="notification-box msg">
                                     <div class="nt-title">
                                         <h4>Setting</h4>
                                         <a href="#" title="">Clear all</a>
@@ -46,7 +46,7 @@
                                     <div class="nott-list">
                                         <div class="notfication-details">
                                             <div class="noty-user-img">
-                                                <img src="images/resources/ny-img1.png" alt="">
+                                                <img src="/images/resources/ny-img1.png" alt="">
                                             </div>
                                             <div class="notification-info">
                                                 <h3><a href="messages.html" title="">Jassica William</a> </h3>
@@ -56,7 +56,7 @@
                                         </div>
                                         <div class="notfication-details">
                                             <div class="noty-user-img">
-                                                <img src="images/resources/ny-img2.png" alt="">
+                                                <img src="/images/resources/ny-img2.png" alt="">
                                             </div>
                                             <div class="notification-info">
                                                 <h3><a href="messages.html" title="">Jassica William</a></h3>
@@ -66,7 +66,7 @@
                                         </div>
                                         <div class="notfication-details">
                                             <div class="noty-user-img">
-                                                <img src="images/resources/ny-img3.png" alt="">
+                                                <img src="/images/resources/ny-img3.png" alt="">
                                             </div>
                                             <div class="notification-info">
                                                 <h3><a href="messages.html" title="">Jassica William</a></h3>
@@ -78,23 +78,23 @@
                                             <a href="messages.html" title="">View All Messsages</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </li>
                              <li>
                                 <a href="/friends" title="">
-                                    <span><img src="images/icon7.png" alt=""></span> 友链
+                                    <span><img src="/images/icon7.png" alt=""></span> 友链
                                 </a>
                             </li>
                            
                             <li>
                                 <a href="/about" title="">
-                                    <span><img src="images/icon2.png" alt=""></span> 关于
+                                    <span><img src="/images/icon2.png" alt=""></span> 关于
                                 </a>
 
                             </li>
                             <li>
                                 <a href="#" title="" class="not-box-open">
-                                    <span><img src="images/icon7.png" alt=""></span> 通知
+                                    <span><img src="/images/icon7.png" alt=""></span> 通知
                                 </a>
                                 <div class="notification-box">
                                     <div class="nt-title">
@@ -104,7 +104,7 @@
                                     <div class="nott-list">
                                         <div class="notfication-details">
                                             <div class="noty-user-img">
-                                                <img src="images/resources/ny-img1.png" alt="">
+                                                <img src="/images/resources/ny-img1.png" alt="">
                                             </div>
                                             <div class="notification-info">
                                                 <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
@@ -113,7 +113,7 @@
                                         </div>
                                         <div class="notfication-details">
                                             <div class="noty-user-img">
-                                                <img src="images/resources/ny-img2.png" alt="">
+                                                <img src="/images/resources/ny-img2.png" alt="">
                                             </div>
                                             <div class="notification-info">
                                                 <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
@@ -122,7 +122,7 @@
                                         </div>
                                         <div class="notfication-details">
                                             <div class="noty-user-img">
-                                                <img src="images/resources/ny-img3.png" alt="">
+                                                <img src="/images/resources/ny-img3.png" alt="">
                                             </div>
                                             <div class="notification-info">
                                                 <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
@@ -131,7 +131,7 @@
                                         </div>
                                         <div class="notfication-details">
                                             <div class="noty-user-img">
-                                                <img src="images/resources/ny-img2.png" alt="">
+                                                <img src="/images/resources/ny-img2.png" alt="">
                                             </div>
                                             <div class="notification-info">
                                                 <h3><a href="#" title="">Jassica William</a> Comment on your project.</h3>
@@ -158,7 +158,7 @@
                            
                        @else 
                         <div class="user-info">
-                            <img src="images/resources/user.png" alt="">
+                            <img src="/images/resources/user.png" alt="">
                             <a href="#" title="">  {{ Auth::user()->name }}</a>
                             <i class="la la-sort-down"></i>
                         </div>

@@ -62,8 +62,7 @@ class PostController extends AdminController
             $show->field('video_url');
             $show->field('content');
             $show->field('is_show');
-            $show->field('sort');
-            $show->field('tag');
+            $show->field('sort'); 
             $show->field('like');
             $show->field('reade_num');
             $show->field('is_top');

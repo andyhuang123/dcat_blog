@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="{{ asset('lib/slick/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('lib/slick/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-     
+   
 </head>
 <body>
     <div class="wrapper"> 
@@ -35,6 +35,7 @@
         @include('layouts.model')  
 
     </div>
+       @include('layouts.footer')
 </body> 
 <script src="{{ asset('lib/slick/slick.min.js') }}" defer></script> 
 </html>
