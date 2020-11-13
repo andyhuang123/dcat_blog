@@ -55,8 +55,8 @@
 									</div>
 									<div class="save-stngs pd3">
 										<ul>
-											<li><button type="submit">保存设置</button></li>
-											<li><button type="submit">还原设置</button></li>
+											<li><button type="submit">提交</button></li>
+											 
 										</ul>
 									</div>
 									<!--save-stngs end-->
