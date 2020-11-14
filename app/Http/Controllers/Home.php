@@ -26,7 +26,10 @@ class Home extends Controller
          
         $post = new Post(); 
         $info = $post::find($aid);
-       
+        if(!$info){
+            
+            return view('error.404');
+        }
         return view('detail',compact('info'));
     }
 

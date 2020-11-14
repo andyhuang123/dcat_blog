@@ -3,12 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>{{ config('app.name', 'Laravel') }} @yield('title')</title>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
+     <!-- website_keyword -->
+    <meta name="keywords" content=" ">
+     <!-- website_desc -->
+    <meta name="description" content=" ">
+    
     <!-- Scripts --> 
     <script src="{{ asset('js/popper.js') }}" defer></script> 
     <script src="{{ mix('js/app.js') }}" defer></script>
@@ -24,17 +26,15 @@
    
 </head>
 <body>
-    <div class="wrapper"> 
-
-        @include('layouts.nav')
-
+    <div class="wrapper" id="app">  
+        @include('layouts.nav') 
         <main class="py-4">
             @yield('content')
         </main>
-        @include('layouts.model')  
-
+        @include('layouts.model')   
     </div>
        @include('layouts.footer')
 </body> 
 <script src="{{ asset('lib/slick/slick.min.js') }}" defer></script> 
+@stack('backendjs')
 </html>

@@ -1,5 +1,5 @@
 @extends('layouts.app') 
-
+@section('title','小程序')
 @section('content')  
  <script src="/js/jquery-3.3.1.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"> </script>  

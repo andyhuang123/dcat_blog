@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title','留言')
 @section('content')
 
 <section class="profile-account-setting">

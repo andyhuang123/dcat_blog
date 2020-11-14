@@ -1,5 +1,5 @@
 @extends('layouts.app') 
-
+@section('title','项目')
 @section('content')
 <div class="search-sec">
 			<div class="container">
