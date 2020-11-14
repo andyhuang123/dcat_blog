@@ -12,5 +12,7 @@ class Category extends Model
     use ModelTree;
 	use HasDateTimeFormatter;
     use SoftDeletes; 
-   
+    
+    //子集存储
+    public $son_nav = [];
 }

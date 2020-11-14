@@ -35,6 +35,7 @@ class CategoryController extends AdminController
             $grid->column('id')->sortable(); 
             $grid->column('title')->tree();
             $grid->column('parent_id');
+            $grid->column('router','路由');
             $grid->column('order')->editable(true);
             $grid->column('is_open')->switch();
             $grid->column('created_at');
@@ -87,7 +88,7 @@ class CategoryController extends AdminController
             $form->select('parent_id', '顶级导航')->options($select_nav)->default(0);
            
             $form->text('title');
-
+            $form->text('router','路由');
             $form->select('nav_type', '类型')->options($this->navigation)->default(0);
 
             $form->switch('is_open', '是否启用')->default(1);

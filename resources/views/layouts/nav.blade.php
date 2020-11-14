@@ -14,43 +14,28 @@
             </div>
             <nav>
                 <ul>
-                    <li>
-                        <a href="/" title="首页">
-                            <span><img src="/images/icon1.png" alt=""></span> 首页
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void();" title="项目">
-                            <span><img src="/images/icon3.png" alt=""></span> 项目
-                        </a>
-                        <ul>
-                            <li><a href="/projects" title="">项目一</a></li>
-                            <li><a href="/projects" title="">项目二</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/jobs" title="">
-                            <span><img src="/images/icon5.png" alt=""></span> 小程序
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/massages" title="" class="not-box-open">
-                            <span><img src="/images/icon6.png" alt=""></span> 留言
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/friends" title="">
-                            <span><img src="/images/icon7.png" alt=""></span> 友链
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/about" title="">
-                            <span><img src="/images/icon2.png" alt=""></span> 关于
-                        </a>
-
-                    </li>
-                    <li>
+                    @foreach($nav_list as $key=>$nav)
+                       @if(count($nav->son_nav) == 0)
+                        <li>
+                            <a href="{{$nav->router}}" title="{{$nav->title}}" class="not-box-open">
+                                <span><img src="/images/icon{{$key}}.png" alt="{{$nav->title}}"></span> {{$nav->title}}
+                            </a>
+                        </li>
+                       @else
+                        <li>
+                            <a href="javascript:void();" title="{{$nav->title}}" class="not-box-open">
+                                <span><img src="/images/icon{{$key}}.png" alt="{{$nav->title}}"></span> {{$nav->title}}
+                            </a>
+                            <ul>
+                                @foreach($nav->son_nav as $son)
+                                <li><a href="/projects" title="{{$son->title}}">{{$son->title}}</a></li>
+                                @endforeach 
+                            </ul>
+                        </li> 
+                       @endif 
+                    @endforeach
+                    
+                    <!--<li>
                         <a href="#" title="" class="not-box-open">
                             <span><img src="/images/icon7.png" alt=""></span> 通知
                         </a>
@@ -83,7 +68,7 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>-->
                 </ul>
             </nav>
             <div class="menu-btn">
