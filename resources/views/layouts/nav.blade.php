@@ -7,8 +7,8 @@
                 </a> 
             </div>
             <div class="search-bar">
-                <form method="GET" action="">
-                    <input type="text" name="search" placeholder="Search...">
+                <form method="GET" action="{{ route('home.search') }}">
+                    <input type="text" name="keywords" placeholder="Search...">
                     <button type="submit"><i class="la la-search"></i></button>
                 </form>
             </div>
@@ -28,7 +28,7 @@
                             </a>
                             <ul>
                                 @foreach($nav->son_nav as $son)
-                                <li><a href="/projects" title="{{$son->title}}">{{$son->title}}</a></li>
+                                <li><a href="{{$son->router}}/{{$son->id}}" title="{{$son->title}}">{{$son->title}}</a></li>
                                 @endforeach 
                             </ul>
                         </li> 
@@ -76,8 +76,7 @@
             </div>
             <div class="user-account">
                 @guest
-                <div class="user-info">
-
+                <div class="user-info"> 
                     <a href="{{ route('login') }}"> <i class="la la-user"></i>登陆</a>
                 </div>
                 @else

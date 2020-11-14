@@ -21,13 +21,16 @@ Route::get('/detail/{aid}', 'Home@detail')->name('home.detail');
 
 Route::get('/jobs', 'Jobs@index')->name('home.jobs');
 
-Route::get('/projects', 'Projects@index')->name('home.projects');
+Route::get('/projects/{id}', 'Projects@index')->name('home.projects');
 
 Route::get('/massages', 'Massages@index')->name('home.massages');
 
 Route::get('/friends', 'Friends@index')->name('home.friends');
 
 Route::get('/about', 'About@index')->name('home.about');
+
+Route::get('/search', 'Search@index')->name('home.search');
+
 
 Auth::routes();
 

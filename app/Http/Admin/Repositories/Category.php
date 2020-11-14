@@ -23,7 +23,7 @@ class Category extends EloquentRepository
 
     public function getTree()
     {
-        $get_data = Model::where('parent_id','>',0)->orderBy('id', 'asc')->get()->pluck('title','id')->toArray(); 
+        $get_data = Model::orderBy('id', 'asc')->get()->pluck('title','id')->toArray(); 
         return $get_data;
     }
 }

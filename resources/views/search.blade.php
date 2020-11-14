@@ -4,17 +4,15 @@
 <div class="search-sec">
 	<div class="container">
 		<div class="search-box">
-			<form>
-				<input type="text" name="search" placeholder="Search keywords">
-				<button type="submit">Search</button>
+			<form method="GET" action="{{ route('home.search') }}">
+				<input type="text" name="keywords" value="{{$keywords}}" placeholder="Search keywords">
+				<button type="submit">搜索</button>
 			</form>
 		</div>
 		<!--search-box end-->
 	</div>
 </div>
-<!--search-sec end-->
-
-
+<!--search-sec end-->  
 <main>
 	<div class="main-section">
 		<div class="container">

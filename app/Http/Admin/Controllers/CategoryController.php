@@ -82,6 +82,7 @@ class CategoryController extends AdminController
             $tree_nav   = (new Category())->getTree();
 
             $select_nav = [0=>'顶级导航'];
+            
             foreach ($tree_nav as $k => $v) {
                 $select_nav[$k] =   $v ;
             } 
