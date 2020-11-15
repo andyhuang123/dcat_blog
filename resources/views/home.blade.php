@@ -127,8 +127,7 @@
 @push('backendjs')
 <script type="text/javascript">
 
-    function addBookmark(url, title) {
-        console.log(url);
+    function addBookmark(url, title) { 
         if (!url) {
             url = window.location
         }
