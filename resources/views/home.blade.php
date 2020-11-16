@@ -83,10 +83,11 @@
                                                 <span>{{$value->like}}</span>
                                             </li>
                                             <li>
-                                                <a href="{{ route('home.detail',['aid'=>$value->id]) }}" title="" class="com"><img src="/images/com.png" alt=""> 评论 15</a>
+                                                <a href="{{ route('home.detail',['aid'=>$value->id]) }}" title="" class="com">
+                                                    <img src="/images/com.png" alt=""> 评论 {{$value->comments->count()}}</a>
                                             </li>
                                         </ul>
-                                        <a><i class="la la-eye"></i>{{$value->reade_num}}</a>
+                                        <a><i class="la la-eye"></i>浏览{{$value->reade_num}}</a>
                                     </div>
                                 </div>
                                     

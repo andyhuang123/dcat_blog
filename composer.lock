@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e58628d14e627c7c64445493b1d9b8fb",
+    "content-hash": "f58b790e65264af0d4496c25cfb723ae",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -124,16 +124,16 @@
         },
         {
             "name": "dcat/laravel-admin",
-            "version": "2.0.6-beta",
+            "version": "2.0.7-beta",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jqhph/dcat-admin.git",
-                "reference": "58250ab29d0f3363824e6dd55bbed929e9c2735d"
+                "reference": "9fda1e0f699563388228b9663bb1cfffb441a18d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jqhph/dcat-admin/zipball/58250ab29d0f3363824e6dd55bbed929e9c2735d",
-                "reference": "58250ab29d0f3363824e6dd55bbed929e9c2735d",
+                "url": "https://api.github.com/repos/jqhph/dcat-admin/zipball/9fda1e0f699563388228b9663bb1cfffb441a18d",
+                "reference": "9fda1e0f699563388228b9663bb1cfffb441a18d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -192,7 +192,7 @@
                 "laravel",
                 "laravel admin"
             ],
-            "time": "2020-11-07T16:15:36+00:00"
+            "time": "2020-11-16T01:23:02+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -337,16 +337,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "2.12.0",
+            "version": "2.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "c6d37b4c42aaa3c3ee175f05eca68056f4185646"
+                "reference": "adce7a954a1c2f14f85e94aed90c8489af204086"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/c6d37b4c42aaa3c3ee175f05eca68056f4185646",
-                "reference": "c6d37b4c42aaa3c3ee175f05eca68056f4185646",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/adce7a954a1c2f14f85e94aed90c8489af204086",
+                "reference": "adce7a954a1c2f14f85e94aed90c8489af204086",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -446,7 +446,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-22T17:26:24+00:00"
+            "time": "2020-11-14T20:26:58+00:00"
         },
         {
             "name": "doctrine/event-manager",
@@ -1775,6 +1775,80 @@
                 }
             ],
             "time": "2020-10-18T11:50:25+00:00"
+        },
+        {
+            "name": "livewire/livewire",
+            "version": "v2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "4dfc7752254eb316911dec13c57578768bd1b743"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/4dfc7752254eb316911dec13c57578768bd1b743",
+                "reference": "4dfc7752254eb316911dec13c57578768bd1b743",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "illuminate/database": "^7.0|^8.0",
+                "illuminate/support": "^7.0|^8.0",
+                "illuminate/validation": "^7.0|^8.0",
+                "php": "^7.2.5",
+                "symfony/http-kernel": "^5.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^7.0|^8.0",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^5.0|^6.0",
+                "orchestra/testbench-dusk": "^5.2|^6.0",
+                "phpunit/phpunit": "^8.4|^9.0",
+                "psy/psysh": "@stable"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ],
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "funding": [
+                {
+                    "url": "https://github.com/calebporzio",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-27T19:08:41+00:00"
         },
         {
             "name": "monolog/monolog",

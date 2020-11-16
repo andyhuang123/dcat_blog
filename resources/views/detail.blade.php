@@ -58,16 +58,25 @@
 													<span>{{$info->like}}</span>
                                             </li>
                                             <li>
-                                                <a href="#" title="" class="com"><img src="/images/com.png" alt=""> 评论 15</a>
+                                                <a href="#" title="" class="com"><img src="/images/com.png" alt=""> 评论 {{$info->comments->count()}}</a>
                                             </li>
                                         </ul>
-                                        <a><i class="la la-eye"></i>{{$info->reade_num}}</a>
+                                        <a><i class="la la-eye"></i>浏览{{$info->reade_num}}</a>
                                     </div>
                                 </div>
-                                @include('layouts.comment')
-                            </div>
-
-                            @include('layouts.ad-profiles')
+                                <div class="comment-section">  
+                                    @if(Auth::check()) 
+                                       <livewire:add-comment :postId="$info->id" key="'add'.$info->id"/>     
+                                    @else
+                                      <div class="plus-ic">
+                                           <a class="text-indigo-600 hover:text-indigo-900" href="{{route('login')}}">登陆后方可评论！</a>
+                                        </div> 
+                                    @endif 
+                                       <livewire:show-comment :post="$info" :key="'show'.$info->id"/>  
+                                  </div>
+                                </div>
+                            </div> 
+                           
                         </div>
                     </div>
                 </div>

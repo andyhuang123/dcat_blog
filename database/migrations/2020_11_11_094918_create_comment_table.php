@@ -13,13 +13,13 @@ class CreateCommentTable extends Migration
      */
     public function up()
     {
-        Schema::create('comment', function (Blueprint $table) {
+        Schema::create('comment', function (Blueprint $table) { 
             $table->increments('id');
-            $table->integer('user_id')->comment('用户id');
-            $table->integer('post_id')->comment('文章id');
+            $table->unsignedInteger('post_id')->default(0)->comment('文章id');
+            $table->unsignedInteger('parent_id')->default(0)->comment('评论人id');
+            $table->unsignedInteger('target_id')->default(0)->comment('被回复人的id');
+            $table->unsignedInteger('user_id')->default(0)->comment('回复人id');
             $table->text('content')->comment('内容');
-            $table->tinyInteger('is_show')->default('1')->comment('是否显示0不显示1显示');
-            $table->integer('reply_id')->default('0')->comment('回复id');
             $table->timestamps();
             $table->softDeletes();
         });

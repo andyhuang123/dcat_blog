@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="{{ asset('lib/slick/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('lib/slick/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-   
+    @livewireStyles
+
 </head>
 <body>
     <div class="wrapper" id="app">  
@@ -34,6 +35,8 @@
         @include('layouts.model')   
     </div>
        @include('layouts.footer')
+
+       @livewireScripts
 </body> 
 <script src="{{ asset('lib/slick/slick.min.js') }}" defer></script> 
 @stack('backendjs')

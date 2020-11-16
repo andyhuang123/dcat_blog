@@ -14,7 +14,7 @@ class Home extends Controller
     {
         $post = new Post();
 
-        $list = $post->where(['is_show'=>1])->orderBy('id','desc')->paginate(5);
+        $list = $post::with(['comments'])->where(['is_show'=>1])->orderBy('id','desc')->paginate(5);
          
         return view('home',compact('list'));
     }
@@ -25,7 +25,9 @@ class Home extends Controller
     {
          
         $post = new Post(); 
-        $info = $post::find($aid);
+
+        $info = $post->getPostById($aid);
+       
         if(!$info){
             
             return view('error.404');
