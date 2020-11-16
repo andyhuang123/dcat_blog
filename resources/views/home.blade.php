@@ -1,14 +1,7 @@
 @extends('layouts.app')
 @section('title','首页')
 @section('content')
-<style>
-    .home_img {
-        margin-bottom: 10px;  
-        width:100%; 
-        height:180px;  
-        overflow:hidden;
-    }
-</style>
+ 
 <div class="main-section">
     <div class="container">
         <div class="main-section-data">
