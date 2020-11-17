@@ -10,34 +10,33 @@
     <meta name="keywords" content=" ">
      <!-- website_desc -->
     <meta name="description" content=" ">
-    
-    <!-- Scripts --> 
-    <script src="{{ asset('js/popper.js') }}" defer></script> 
-    <script src="{{ mix('js/app.js') }}" defer></script>
-  
-    <!-- Fonts -->
-    <!-- <link rel="dns-prefetch" href="//fonts.gstatic.com">  -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> -->
-     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
-    <!-- Styles -->  
+     <!-- Styles -->  
     <link rel="stylesheet" href="{{ asset('lib/slick/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('lib/slick/slick-theme.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <!-- Scripts -->  
+    <script src="{{ asset('js/popper.js') }}"></script> 
+    <script src="{{ asset('js/app.js') }}"></script> 
+  
+    <!-- Fonts --> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    
     @livewireStyles
 
 </head>
-<body>
-    <div class="wrapper" id="app">  
-        @include('layouts.nav') 
-        <main class="py-4">
-            @yield('content')
-        </main>
-        @include('layouts.model')   
-    </div>
-       @include('layouts.footer')
-
-       @livewireScripts
-</body> 
-<script src="{{ asset('lib/slick/slick.min.js') }}" defer></script> 
-@stack('backendjs')
+    <body>
+         <div class="wrapper" id="app">  
+            @include('layouts.nav') 
+            <!-- Page Content --> 
+            @yield('content') 
+        </div>
+        @include('layouts.footer') 
+    </body>
+    <script src="{{ asset('lib/slick/slick.min.js') }}" defer></script> 
+    @yield('js')
+    
+    @livewireScripts 
+    
+   
 </html>
+ 
