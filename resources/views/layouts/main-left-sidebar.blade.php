@@ -24,7 +24,7 @@
         </ul>
     </div>
     <div class="suggestions full-width">
-          <img src="/images/resources/gzh.png" alt=""> 
+          <img src="/images/resources/gzh.png" alt="" width="100%"> 
             <div class="suggestions-list"> 
                 <div class="view-more">
                     <h3>扫码关注</h3>

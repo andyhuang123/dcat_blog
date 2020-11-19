@@ -37,27 +37,28 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection password
      * @property Grid\Column|Collection avatar
      * @property Grid\Column|Collection remember_token
+     * @property Grid\Column|Collection nav_type
      * @property Grid\Column|Collection is_open
      * @property Grid\Column|Collection deleted_at
+     * @property Grid\Column|Collection router
      * @property Grid\Column|Collection post_id
+     * @property Grid\Column|Collection target_id
      * @property Grid\Column|Collection content
-     * @property Grid\Column|Collection is_show
-     * @property Grid\Column|Collection reply_id
+     * @property Grid\Column|Collection desc
      * @property Grid\Column|Collection connection
      * @property Grid\Column|Collection queue
      * @property Grid\Column|Collection payload
      * @property Grid\Column|Collection exception
      * @property Grid\Column|Collection failed_at
-     * @property Grid\Column|Collection nav_title
-     * @property Grid\Column|Collection nav_type
-     * @property Grid\Column|Collection nav_sort
-     * @property Grid\Column|Collection nav_pid
-     * @property Grid\Column|Collection nav_route
      * @property Grid\Column|Collection email
      * @property Grid\Column|Collection token
-     * @property Grid\Column|Collection desc
+     * @property Grid\Column|Collection tokenable_type
+     * @property Grid\Column|Collection tokenable_id
+     * @property Grid\Column|Collection abilities
+     * @property Grid\Column|Collection last_used_at
      * @property Grid\Column|Collection cover_image
      * @property Grid\Column|Collection video_url
+     * @property Grid\Column|Collection is_show
      * @property Grid\Column|Collection sort
      * @property Grid\Column|Collection tag
      * @property Grid\Column|Collection like
@@ -65,7 +66,12 @@ namespace Dcat\Admin {
      * @property Grid\Column|Collection is_top
      * @property Grid\Column|Collection author
      * @property Grid\Column|Collection nav_id
+     * @property Grid\Column|Collection ip_address
+     * @property Grid\Column|Collection user_agent
+     * @property Grid\Column|Collection last_activity
      * @property Grid\Column|Collection email_verified_at
+     * @property Grid\Column|Collection two_factor_secret
+     * @property Grid\Column|Collection two_factor_recovery_codes
      *
      * @method Grid\Column|Collection id(string $label = null)
      * @method Grid\Column|Collection name(string $label = null)
@@ -93,27 +99,28 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection password(string $label = null)
      * @method Grid\Column|Collection avatar(string $label = null)
      * @method Grid\Column|Collection remember_token(string $label = null)
+     * @method Grid\Column|Collection nav_type(string $label = null)
      * @method Grid\Column|Collection is_open(string $label = null)
      * @method Grid\Column|Collection deleted_at(string $label = null)
+     * @method Grid\Column|Collection router(string $label = null)
      * @method Grid\Column|Collection post_id(string $label = null)
+     * @method Grid\Column|Collection target_id(string $label = null)
      * @method Grid\Column|Collection content(string $label = null)
-     * @method Grid\Column|Collection is_show(string $label = null)
-     * @method Grid\Column|Collection reply_id(string $label = null)
+     * @method Grid\Column|Collection desc(string $label = null)
      * @method Grid\Column|Collection connection(string $label = null)
      * @method Grid\Column|Collection queue(string $label = null)
      * @method Grid\Column|Collection payload(string $label = null)
      * @method Grid\Column|Collection exception(string $label = null)
      * @method Grid\Column|Collection failed_at(string $label = null)
-     * @method Grid\Column|Collection nav_title(string $label = null)
-     * @method Grid\Column|Collection nav_type(string $label = null)
-     * @method Grid\Column|Collection nav_sort(string $label = null)
-     * @method Grid\Column|Collection nav_pid(string $label = null)
-     * @method Grid\Column|Collection nav_route(string $label = null)
      * @method Grid\Column|Collection email(string $label = null)
      * @method Grid\Column|Collection token(string $label = null)
-     * @method Grid\Column|Collection desc(string $label = null)
+     * @method Grid\Column|Collection tokenable_type(string $label = null)
+     * @method Grid\Column|Collection tokenable_id(string $label = null)
+     * @method Grid\Column|Collection abilities(string $label = null)
+     * @method Grid\Column|Collection last_used_at(string $label = null)
      * @method Grid\Column|Collection cover_image(string $label = null)
      * @method Grid\Column|Collection video_url(string $label = null)
+     * @method Grid\Column|Collection is_show(string $label = null)
      * @method Grid\Column|Collection sort(string $label = null)
      * @method Grid\Column|Collection tag(string $label = null)
      * @method Grid\Column|Collection like(string $label = null)
@@ -121,7 +128,12 @@ namespace Dcat\Admin {
      * @method Grid\Column|Collection is_top(string $label = null)
      * @method Grid\Column|Collection author(string $label = null)
      * @method Grid\Column|Collection nav_id(string $label = null)
+     * @method Grid\Column|Collection ip_address(string $label = null)
+     * @method Grid\Column|Collection user_agent(string $label = null)
+     * @method Grid\Column|Collection last_activity(string $label = null)
      * @method Grid\Column|Collection email_verified_at(string $label = null)
+     * @method Grid\Column|Collection two_factor_secret(string $label = null)
+     * @method Grid\Column|Collection two_factor_recovery_codes(string $label = null)
      */
     class Grid {}
 
@@ -154,27 +166,28 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection password
      * @property Show\Field|Collection avatar
      * @property Show\Field|Collection remember_token
+     * @property Show\Field|Collection nav_type
      * @property Show\Field|Collection is_open
      * @property Show\Field|Collection deleted_at
+     * @property Show\Field|Collection router
      * @property Show\Field|Collection post_id
+     * @property Show\Field|Collection target_id
      * @property Show\Field|Collection content
-     * @property Show\Field|Collection is_show
-     * @property Show\Field|Collection reply_id
+     * @property Show\Field|Collection desc
      * @property Show\Field|Collection connection
      * @property Show\Field|Collection queue
      * @property Show\Field|Collection payload
      * @property Show\Field|Collection exception
      * @property Show\Field|Collection failed_at
-     * @property Show\Field|Collection nav_title
-     * @property Show\Field|Collection nav_type
-     * @property Show\Field|Collection nav_sort
-     * @property Show\Field|Collection nav_pid
-     * @property Show\Field|Collection nav_route
      * @property Show\Field|Collection email
      * @property Show\Field|Collection token
-     * @property Show\Field|Collection desc
+     * @property Show\Field|Collection tokenable_type
+     * @property Show\Field|Collection tokenable_id
+     * @property Show\Field|Collection abilities
+     * @property Show\Field|Collection last_used_at
      * @property Show\Field|Collection cover_image
      * @property Show\Field|Collection video_url
+     * @property Show\Field|Collection is_show
      * @property Show\Field|Collection sort
      * @property Show\Field|Collection tag
      * @property Show\Field|Collection like
@@ -182,7 +195,12 @@ namespace Dcat\Admin {
      * @property Show\Field|Collection is_top
      * @property Show\Field|Collection author
      * @property Show\Field|Collection nav_id
+     * @property Show\Field|Collection ip_address
+     * @property Show\Field|Collection user_agent
+     * @property Show\Field|Collection last_activity
      * @property Show\Field|Collection email_verified_at
+     * @property Show\Field|Collection two_factor_secret
+     * @property Show\Field|Collection two_factor_recovery_codes
      *
      * @method Show\Field|Collection id(string $label = null)
      * @method Show\Field|Collection name(string $label = null)
@@ -210,27 +228,28 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection password(string $label = null)
      * @method Show\Field|Collection avatar(string $label = null)
      * @method Show\Field|Collection remember_token(string $label = null)
+     * @method Show\Field|Collection nav_type(string $label = null)
      * @method Show\Field|Collection is_open(string $label = null)
      * @method Show\Field|Collection deleted_at(string $label = null)
+     * @method Show\Field|Collection router(string $label = null)
      * @method Show\Field|Collection post_id(string $label = null)
+     * @method Show\Field|Collection target_id(string $label = null)
      * @method Show\Field|Collection content(string $label = null)
-     * @method Show\Field|Collection is_show(string $label = null)
-     * @method Show\Field|Collection reply_id(string $label = null)
+     * @method Show\Field|Collection desc(string $label = null)
      * @method Show\Field|Collection connection(string $label = null)
      * @method Show\Field|Collection queue(string $label = null)
      * @method Show\Field|Collection payload(string $label = null)
      * @method Show\Field|Collection exception(string $label = null)
      * @method Show\Field|Collection failed_at(string $label = null)
-     * @method Show\Field|Collection nav_title(string $label = null)
-     * @method Show\Field|Collection nav_type(string $label = null)
-     * @method Show\Field|Collection nav_sort(string $label = null)
-     * @method Show\Field|Collection nav_pid(string $label = null)
-     * @method Show\Field|Collection nav_route(string $label = null)
      * @method Show\Field|Collection email(string $label = null)
      * @method Show\Field|Collection token(string $label = null)
-     * @method Show\Field|Collection desc(string $label = null)
+     * @method Show\Field|Collection tokenable_type(string $label = null)
+     * @method Show\Field|Collection tokenable_id(string $label = null)
+     * @method Show\Field|Collection abilities(string $label = null)
+     * @method Show\Field|Collection last_used_at(string $label = null)
      * @method Show\Field|Collection cover_image(string $label = null)
      * @method Show\Field|Collection video_url(string $label = null)
+     * @method Show\Field|Collection is_show(string $label = null)
      * @method Show\Field|Collection sort(string $label = null)
      * @method Show\Field|Collection tag(string $label = null)
      * @method Show\Field|Collection like(string $label = null)
@@ -238,7 +257,12 @@ namespace Dcat\Admin {
      * @method Show\Field|Collection is_top(string $label = null)
      * @method Show\Field|Collection author(string $label = null)
      * @method Show\Field|Collection nav_id(string $label = null)
+     * @method Show\Field|Collection ip_address(string $label = null)
+     * @method Show\Field|Collection user_agent(string $label = null)
+     * @method Show\Field|Collection last_activity(string $label = null)
      * @method Show\Field|Collection email_verified_at(string $label = null)
+     * @method Show\Field|Collection two_factor_secret(string $label = null)
+     * @method Show\Field|Collection two_factor_recovery_codes(string $label = null)
      */
     class Show {}
 
