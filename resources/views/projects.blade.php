@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title',$name->title)
+@section('title',$name->title??'all')
 @section('content')
 <div class="search-sec">
 	<div class="container">
@@ -92,7 +92,7 @@
 													<img src="/images/liked-img.png" alt="">
 													<span>{{$value->like}}</span>
 												</li>
-												<li><a href="{{ route('home.detail',['aid'=>$value->id]) }}" title="" class="com"><img src="/images/com.png" alt=""> 评论 15</a></li>
+												<li><a href="{{ route('home.detail',['aid'=>$value->id]) }}" title="" class="com"><img src="/images/com.png" alt=""> 评论 {{$value->comments->count()}}</a></li>
 											</ul>
 											<a><i class="la la-eye"></i>{{$value->reade_num}}</a>
 										</div>

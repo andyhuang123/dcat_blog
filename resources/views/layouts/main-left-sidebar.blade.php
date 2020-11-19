@@ -24,63 +24,29 @@
         </ul>
     </div>
     <div class="suggestions full-width">
+          <img src="/images/resources/gzh.png" alt=""> 
+            <div class="suggestions-list"> 
+                <div class="view-more">
+                    <h3>扫码关注</h3>
+                </div>   
+            </div> 
+    </div>
+    <div class="suggestions full-width">
         <div class="sd-title">
-            <h3>意见建议</h3>
-            <i class="la la-ellipsis-v"></i>
+            <h3>导航栏</h3>  
+            <i class="la la-space-shuttle"></i> 
         </div>
         <div class="suggestions-list">
-            <div class="suggestion-usd">
-                <img src="/images/resources/user-1.png" alt="" style="width:50px;height:50px">
+
+            <div class="suggestion-usd"> 
                 <div class="sgt-text">
                     <h4>Jessica William</h4>
                     <span>Graphic Designer</span>
                 </div>
-                <span><i class="la la-plus"></i></span>
+                <span><i class="la la-link"></i></span>
             </div>
-            <div class="suggestion-usd">
-                <img src="/images/resources/user-1.png" alt="" style="width:50px;height:50px">
-                <div class="sgt-text">
-                    <h4>John Doe</h4>
-                    <span>PHP Developer</span>
-                </div>
-                <span><i class="la la-plus"></i></span>
-            </div>
-            <div class="suggestion-usd">
-                <img src="/images/resources/user-1.png" alt="" style="width:50px;height:50px">
-                <div class="sgt-text">
-                    <h4>Poonam</h4>
-                    <span>Wordpress Developer</span>
-                </div>
-                <span><i class="la la-plus"></i></span>
-            </div>
-            <div class="suggestion-usd">
-                <img src="/images/resources/user-1.png" alt="" style="width:50px;height:50px">
-                <div class="sgt-text">
-                    <h4>Bill Gates</h4>
-                    <span>C & C++ Developer</span>
-                </div>
-                <span><i class="la la-plus"></i></span>
-            </div>
-            <div class="suggestion-usd">
-                <img src="/images/resources/user-1.png" alt="" style="width:50px;height:50px">
-                <div class="sgt-text">
-                    <h4>Jessica William</h4>
-                    <span>Graphic Designer</span>
-                </div>
-                <span><i class="la la-plus"></i></span>
-            </div>
-            <div class="suggestion-usd">
-                <img src="/images/resources/user-1.png" alt="" style="width:50px;height:50px">
-                <div class="sgt-text">
-                    <h4>John Doe</h4>
-                    <span>PHP Developer</span>
-                </div>
-                <span><i class="la la-plus"></i></span>
-            </div>
-            <div class="view-more">
-                <a href="#" title="">View More</a>
-            </div>
+             
+           
         </div>
     </div>
-
 </div>

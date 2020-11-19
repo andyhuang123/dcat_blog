@@ -5,7 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View; 
 use App\Models\Category;
-
+use Illuminate\Pagination\Paginator;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -24,7 +24,8 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    { 
+    {  
+        
         //共享导航栏列表
         View::share('nav_list', $this->system_nav());
     }
