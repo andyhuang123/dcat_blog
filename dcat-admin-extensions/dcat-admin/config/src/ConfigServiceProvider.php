@@ -26,6 +26,20 @@ class ConfigServiceProvider extends ServiceProvider
 		//
 		
 	}
+	// 注册菜单
+	protected $menu = [
+		[
+			'title' => 'Operation Log',
+			'uri'   => '',
+			'icon'  => 'feather icon-x', 
+		],
+		[
+			'parent' => 'Operation Log', // 指定父级菜单
+			'title'  => 'List',
+			'uri'    => 'configs',
+		],
+	];
+  
 
 	public function settingForm()
 	{
