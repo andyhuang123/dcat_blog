@@ -1,0 +1,48 @@
+扩展开发:
+1.命令生成扩展目录:
+例如：   php artisan admin:ext-make dcat-admin/operation-log --namespace="Dcat\Admin\OperationLog"
+
+命令参数说明
+
+name 扩展包名称，扩展的名称是一个标准的composer包名，请统一使用小写字母 + 中划线(-)的风格命名，标准的格式如 dcat-admin/operation-log，前面一部分可以是个人名称，后面一部分可以是对扩展包功能的概括词语
+--namespace= 扩展包命名空间，默认会根据包名自动生成，例如你的包名是jiangqh/operation-log，那么默认的命名空间是Jiangqh/OperationLog
+--theme 是否为主题扩展
+
+php artisan admin:ext-make dcat-admin/config --namespace="Dcat\Admin\Config"
+
+
+2.通过管理页面创建扩展
+
+打开扩展管理页面http://localhost/admin/auth/extensions，然后点击表格下面第一行的快速创建，然后输入扩展包名和命名空间即可，在实际开发中也更推荐大家使用界面创建扩展，这样更方便
+
+扩展创建完成之后可以看到扩展文件夹下多了个dcat-admin/extensions/dcat-admin/operation-log目录，目录结构如下
+
+C:\Users\Administrator\Desktop\demo_laravel\dcat_blog\dcat-admin-extensions/dcat-admin/config
+    ├── README.md
+    ├── composer.json
+    ├── version.php
+    ├── updates
+    ├── resources
+    │   ├── lang
+    │   ├── assets
+    │   │   ├── css
+    │   │   │   └── index.css
+    │   │   └── js
+    │   │       └── index.js
+    │   └── views
+    │       └── index.blade.php
+    └── src
+        ├── ConfigServiceProvider.php
+        ├── Setting.php
+        ├── Models
+        └── Http
+            ├── routes.php
+            ├── Middleware
+            └── Controllers
+                └── ConfigController.php
+
+
+3.创建迁移文件 (migration)
+首先我们需要创建一个表迁移文件，运行命令 php artisan make:migration CreateConfigTable，然后写入文件内容如下                
+
+

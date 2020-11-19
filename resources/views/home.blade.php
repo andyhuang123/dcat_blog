@@ -11,7 +11,7 @@
                     </div>
                     <div class="col-lg-6 col-md-8 no-pd">
                         <div class="main-ws-sec">  
-                            <div class="posts-section" id="articleListM">
+                            <div class="posts-section">
                                 @if (count($list))
                                     @foreach($list as $key=>$value) 
                                     <div class="post-bar">

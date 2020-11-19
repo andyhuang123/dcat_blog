@@ -16,5 +16,6 @@ Route::group([
     $router->resource('/posts', PostController::class);
     $router->resource('/comments', CommentController::class); 
     $router->resource('/categores', CategoryController::class);
+    $router->resource('/configs', ConfigController::class);
     
 });
