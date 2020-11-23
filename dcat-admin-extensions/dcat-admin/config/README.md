@@ -1,3 +1,1 @@
-# Dcat Admin Extension
-
-
+# dcat-admin.config

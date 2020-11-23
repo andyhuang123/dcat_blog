@@ -1,7 +1,6 @@
 <?php
 
 return [
-    'name' => '配置名称',
-    'value' => '配置值',
-    'desc' =>'配置描述'
+    'title' => '网站配置',
+    'setting_title' => '网站配置' 
 ];

@@ -6,13 +6,12 @@ use Dcat\Admin\Grid;
 use Dcat\Admin\Form;
 use Dcat\Admin\Http\JsonResponse;
 use Dcat\Admin\Layout\Content; 
-use Dcat\Admin\Admin;
-use Illuminate\Routing\Controller;
+use Dcat\Admin\Admin; 
 use Dcat\Admin\Config\Models\Config;
 use Dcat\Admin\Config\ConfigServiceProvider;
-use Dcat\Admin\Support\Helper;
-use Illuminate\Support\Arr;
-class ConfigController extends Controller
+use Dcat\Admin\Http\Controllers\AdminController;
+
+class ConfigController extends AdminController
 {
     public function index(Content $content)
     {
@@ -28,11 +27,9 @@ class ConfigController extends Controller
             $grid->column('id', 'ID')->sortable();
             
             $grid->id('ID')->sortable();
-            $grid->name()->display(function ($name) {
-                return "<a tabindex=\"0\" class=\"btn btn-xs btn-twitter\" role=\"button\" data-toggle=\"popover\" data-html=true title=\"Usage\" data-content=\"<code>config('$name');</code>\">$name</a>";
-            });
-            $grid->value();
-            $grid->desc();
+            $grid->name('标识');
+            $grid->value('值');
+            $grid->desc('描述');
     
             $grid->created_at();
             $grid->updated_at();
@@ -51,17 +48,14 @@ class ConfigController extends Controller
         $form = new Form(new Config());
 
         $form->display('id', 'ID');
-        $form->text('name')->rules('required');
+        $form->text('name','标识')->rules('required');
         if (config('admin.extensions.config.valueEmptyStringAllowed', false)) {
-            $form->textarea('value');
+            $form->textarea('value','值');
         } else {
-            $form->textarea('value')->rules('required');
+            $form->textarea('value','值')->rules('required');
         }
-        $form->textarea('description');
-
-        $form->display('created_at');
-        $form->display('updated_at');
-
+        $form->textarea('desc','描述');
+ 
         return $form;
     }
 

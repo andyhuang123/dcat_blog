@@ -18,7 +18,7 @@ class CreateConfigTable extends Migration
      */
     public function up()
     {
-        if (! Schema::hasTable('admin_operation_log')) {
+        if (! Schema::hasTable('config')) {
             Schema::create('config', function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('name')->default('');

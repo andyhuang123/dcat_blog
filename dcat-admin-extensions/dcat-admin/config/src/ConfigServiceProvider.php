@@ -29,20 +29,20 @@ class ConfigServiceProvider extends ServiceProvider
 	// 注册菜单
 	protected $menu = [
 		[
-			'title' => 'Operation Log',
+			'title' => 'website',
 			'uri'   => '',
-			'icon'  => 'feather icon-x', 
+			'icon'  => 'fa-gears', 
 		],
 		[
-			'parent' => 'Operation Log', // 指定父级菜单
-			'title'  => 'List',
+			'parent' => 'website', // 指定父级菜单
+			'title'  => '网站配置',
 			'uri'    => 'configs',
 		],
 	];
   
-
-	public function settingForm()
-	{
-		return new Setting($this);
-	}
+    // 返回配置表单对象，如果不需要保存配置参数，则请删除这个方法  
+	// public function settingForm()
+	// {
+	// 	return new Setting($this);
+	// }
 }
